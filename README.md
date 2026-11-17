@@ -77,6 +77,12 @@ NO OS should not become:
 - `ENGINEERING.md` — implementation and quality standards.
 - `EVOLUTION.md` — how the system learns and changes.
 - `ROADMAP.md` — phased outcomes and acceptance gates.
+- `CAPABILITIES.md` — initial capability inventory and plane mapping.
+- `INTEGRATION_MODEL.md` — API, webhook, event, and cross-product exchange rules.
+- `AGENTS.md` — agent roles, permissions, orchestration, and evaluation.
+- `OPERATIONS.md` — health, observability, reliability, and incident learning.
+- `COSTS.md` — cost attribution, budgets, and provider economics.
+- `INTERFACE.md` — product experience and truthful UI states.
 - `DECISIONS/` — durable architectural decision records.
 
 ## How to read this repository
