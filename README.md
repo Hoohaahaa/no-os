@@ -6,7 +6,7 @@ NO OS is intended to become the shared operating layer behind a portfolio of pro
 
 > NO OS is not a fixed blueprint. It is a system for discovering, evaluating, composing, and improving the infrastructure and capabilities that products need.
 
-## What it is
+## Interactive preview\n\n**Live preview:** https://no-os-control-plane.vercel.app\n\nThe current preview is a static front-end application. Product creation is stored in the current browser only. Provider setup actions are intentionally disabled; the provider and resource lists contain illustrative records. Authentication, database persistence, central audit logging, and live provider verification are not implemented yet.\n\n## What it is
 
 - A **Control Plane** for projects, providers, resources, policies, and environments.
 - A **Product Factory** for repeatable, permissioned product setup and provisioning.
@@ -33,7 +33,7 @@ The initial capability landscape includes AI coding, version control, frontend a
 
 ## Current status
 
-**Stage: Foundation / Phase 1.** This repository begins as a living specification and decision record. A documented capability is not necessarily implemented, connected, tested, or operational. NO OS must report those states separately and never imply a working integration where none exists.
+**Stage: Foundation / technical proof.** The repository contains a deployed interactive front-end preview, in addition to the living specification and decision record. A documented capability is not necessarily implemented, connected, tested, or operational. NO OS must report those states separately and never imply a working integration where none exists.
 
 ## Development phases
 
