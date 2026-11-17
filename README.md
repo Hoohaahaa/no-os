@@ -83,6 +83,12 @@ NO OS should not become:
 - `OPERATIONS.md` — health, observability, reliability, and incident learning.
 - `COSTS.md` — cost attribution, budgets, and provider economics.
 - `INTERFACE.md` — product experience and truthful UI states.
+- `BLIND_SPOTS.md` — forward-looking risks and design safeguards.
+- `TECHNICAL_BASELINE.md` — provisional stack criteria, first vertical slice, and domain contracts.
+- `THREAT_MODEL.md` — abuse cases and security verification requirements.
+- `EVALUATION.md` — workflow and agent evaluation standards.
+- `DATA_GOVERNANCE.md` — ownership, provenance, retention, and cross-product data rules.
+- `DELIVERY_SYSTEM.md` — change, release, dependency, and recovery practices.
 - `DECISIONS/` — durable architectural decision records.
 
 ## How to read this repository
