@@ -16,7 +16,7 @@
 ### Acceptance gate
 A reviewer can explain the system boundaries, data ownership, credential flow, agent authority, lifecycle states, and what is intentionally not being built yet. The first technical slice has a defined test plan.
 
-## Phase 2 — Product Factory
+## Phase 1.5 — Technical proof (entry gate to Product Factory)\n\n### Outcomes\n- Select a concrete stack through a recorded comparison, including free-tier/commercial terms and exit cost.\n- Build an authenticated, server-authorized control-plane skeleton.\n- Implement product and environment registry, provider catalog, connection metadata, resource inventory, and audit history.\n- Verify one provider read-only, with secret values kept out of application records and logs.\n- Add tenant-isolation, authorization, and failure-path tests.\n\n### Acceptance gate\nA real user can sign in, create a product/environment, inspect provider/resource metadata, verify one authorized provider connection, and see an auditable result. Unauthorized access is denied by automated tests. No production provisioning is enabled.\n\n## Phase 2 — Product Factory
 
 ### Outcomes
 - Project and environment registry.
@@ -56,7 +56,7 @@ An agent completes a bounded task end-to-end, provides evidence and tests, canno
 ### Acceptance gate
 Two independent products exchange a permitted event or use a shared capability without sharing unrestricted databases or credentials; access can be audited and revoked.
 
-## Continuous work across all phases
+## Cross-phase engineering gates\n\n- Threat model and data classification before new sensitive data flows.\n- Provenance and review dates for durable knowledge.\n- Evaluation cases for consequential AI workflows before release.\n- Dependency and build provenance review for production releases.\n- Backup/restore evidence before relying on recovery claims.\n- Cost attribution and provider exit notes for critical dependencies.\n\n## Continuous work across all phases
 
 Security, quality, documentation, cost awareness, observability, accessibility, and simplification are continuous requirements—not later add-ons.
 
