@@ -1,17 +1,14 @@
 # Evolution and Governed Self-Improvement
 
 ## Purpose
-
 NO OS should learn from operation and improve its own methods, architecture, and recommendations. Evolution must be evidence-driven and governed; autonomy does not mean unrestricted self-modification.
 
 ## Learning loop
-
 Observe → interpret → form hypotheses → challenge → evaluate → experiment → verify → record → revise.
 
 The loop is adaptive. It should not be run ceremonially when there is no meaningful uncertainty or value.
 
 ## Knowledge record
-
 For each consequential discovery or proposal, capture:
 - Title and scope
 - Date and source/provenance
@@ -25,8 +22,12 @@ For each consequential discovery or proposal, capture:
 - Outcome and follow-up
 - Status: hypothesis, proposed, accepted, experimental, rejected, superseded
 
-## Change classes
+## Decision & alternatives memory
+DECISION_LEDGER.md is the portfolio-wide source of truth for material decisions and paths not taken. Product-connected conversations, agents, and workflows must follow its capture protocol. Record why meaningful alternatives were rejected, deferred, blocked, superseded, or not investigated; preserve evidence and provenance; and never invent missing rationale.
 
+For legacy work, create a bounded retrospective backfill task across accessible product artifacts and connected conversations. Mark reconstructed records as retrospective, include confidence and source references, and leave unknown reasons explicitly unknown. Create follow-up tasks for recoverable gaps. Do not claim access to conversations or systems that are not actually available.
+
+## Change classes
 ### Class A — Low risk
 Documentation corrections, local refactors, isolated tests, and reversible non-production improvements. May be automated within repository and branch permissions.
 
@@ -39,7 +40,6 @@ Production infrastructure, security boundaries, credential scopes, authenticatio
 The exact classification may be refined as the implementation matures; never downgrade a change merely to avoid approval.
 
 ## Self-critique
-
 The system should periodically inspect:
 - Complexity added versus value delivered
 - Unused abstractions and integrations
@@ -51,9 +51,7 @@ The system should periodically inspect:
 - Opportunities to simplify or remove capabilities
 
 ## Constitutional stability
-
 The identity and core safety principles should be difficult to change casually, but not immune to revision. Changes require a documented proposal, explicit rationale, adversarial review, impact analysis, and human approval.
 
 ## No infinite-growth assumption
-
 The system is not expected to compute endlessly or improve automatically. It should operate within explicit budgets for time, tokens, compute, money, and human attention. Stop when additional investigation is unlikely to change the decision.
