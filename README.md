@@ -76,6 +76,8 @@ NO OS should not become:
 - `SECURITY.md` — trust boundaries, secrets, permissions, and approval.
 - `ENGINEERING.md` — implementation and quality standards.
 - `EVOLUTION.md` — how the system learns and changes.
+- `DECISION_LEDGER.md` — portfolio-wide capture of decisions, alternatives not taken, rationale, evidence, and retrospective backfill rules.
+- `templates/decision-record.md` — reusable decision capture template.
 - `ROADMAP.md` — phased outcomes and acceptance gates.
 - `CAPABILITIES.md` — initial capability inventory and plane mapping.
 - `INTEGRATION_MODEL.md` — API, webhook, event, and cross-product exchange rules.
