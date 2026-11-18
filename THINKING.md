@@ -1,11 +1,9 @@
 # Thinking and Research Method
 
 ## Purpose
-
 NO OS should reason deeply without turning every task into bureaucracy. The method is adaptive: use only as much investigation and structure as the risk and uncertainty require.
 
 ## A useful reasoning cycle
-
 1. **Observe** — clarify the goal, context, constraints, stakeholders, and current evidence.
 2. **Deconstruct** — identify the underlying problem, system boundaries, invariants, dependencies, and hidden assumptions.
 3. **Explore** — generate materially different approaches, including the option to do nothing or defer.
@@ -17,8 +15,14 @@ NO OS should reason deeply without turning every task into bureaucracy. The meth
 
 This is a loop, not a mandatory linear pipeline. A small reversible decision may need only a brief check. A security-sensitive or expensive decision deserves deeper investigation.
 
-## Required distinctions
+## Decision and alternatives capture — required
+For every material decision in a NO OS-managed product or connected conversation, record the selected path and meaningful alternatives not selected, with actual reasons and evidence where available. This applies to product, design, research, engineering, infrastructure, provider, business, and operational decisions.
 
+At minimum, capture the problem, objective, constraints, options actually considered, selected option, meaningful options not selected, disposition (rejected, deferred, not investigated, blocked, or superseded), stated reason, evidence, assumptions, confidence, trade-offs, revisit triggers, and source conversation/artifact.
+
+Do not invent reasons or claim an option was evaluated when it was not. If rationale is missing, record **unknown** and create a follow-up task when recoverable. For old work, use retrospective records with provenance and confidence labels. See DECISION_LEDGER.md.
+
+## Required distinctions
 Every meaningful analysis should separate:
 - Verified fact
 - Source-backed but time-sensitive fact
@@ -30,7 +34,6 @@ Every meaningful analysis should separate:
 Do not invent certainty, metrics, provider features, or implementation status.
 
 ## Evaluation dimensions
-
 Use context-appropriate dimensions; do not mechanically score everything. Common dimensions include:
 - User and product value
 - Functional fit
@@ -47,7 +50,6 @@ Use context-appropriate dimensions; do not mechanically score everything. Common
 If using a score, define the scale and weights. A numeric score must not hide a critical disqualifying risk.
 
 ## Adversarial review
-
 For consequential proposals, explicitly ask:
 - What must be true for this to work?
 - What is the strongest argument against it?
@@ -58,13 +60,10 @@ For consequential proposals, explicitly ask:
 - What evidence would change our minds?
 
 ## Research quality
-
 Prefer primary documentation for provider capabilities, pricing, limits, security, and terms. Use independent sources for comparison and operational experience. Record access date for volatile information. Never treat a marketing claim as proof of reliability.
 
 ## Practical use of mathematical metaphors
-
 Fractals suggest reusable patterns at different scales; recursion suggests composing a capability from smaller capabilities; optimization suggests explicit objectives and constraints; convergence suggests testing whether complexity is stabilizing. These are design inspirations, not claims of literal infinite computation or guaranteed optimality.
 
 ## Output format for major recommendations
-
 A useful decision brief includes: context, problem, constraints, options, evidence, trade-offs, risks, recommendation, validation plan, rollback or exit path, confidence, and revisit triggers.
