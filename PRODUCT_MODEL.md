@@ -3,7 +3,6 @@
 **Status: Initial domain model.** Names and relationships may evolve as implementation reveals better boundaries.
 
 ## Core entities
-
 ### Product
 An independently owned application or service. Has identity, purpose, owners, repositories, environments, dependencies, data classification, lifecycle, and optional integrations.
 
@@ -35,10 +34,12 @@ A versioned sequence or graph of tasks, conditions, approvals, retries, and comp
 A versioned fact that something happened. Events should be minimal, attributable, permission-aware, and safe to replay where applicable.
 
 ### Knowledge Record
-A decision, discovery, experiment, incident lesson, or evidence item with provenance, confidence, scope, date, and status.
+A decision, discovery, experiment, incident lesson, or evidence item with provenance, confidence, scope, date, and status. Decision records must include selected and non-selected paths, disposition, actual rationale, evidence, assumptions, confidence, trade-offs, and revisit triggers. Retrospective records must be marked as such and must not invent missing reasons. See DECISION_LEDGER.md.
+
+### Alternative Record
+A path materially considered or identified as plausible in a decision context. It records whether it was selected, rejected, deferred, not investigated, blocked, or superseded; the reason and evidence where known; and any revisit trigger. An absent option is not presumed rejected.
 
 ## Important relationships
-
 - A product may have multiple environments.
 - An environment may use multiple providers and resources.
 - A provider may expose multiple capabilities.
@@ -47,11 +48,10 @@ A decision, discovery, experiment, incident lesson, or evidence item with proven
 - An integration must identify both ends, the data exchanged, and the permissions granted.
 - An agent operates under an explicit principal and task scope.
 - A knowledge record may apply globally, to a capability, or to one product; scope must be explicit.
+- A decision record links to its product, source conversation/workflow, evidence, implementation, and alternatives where access permits.
 
 ## Lifecycle states
-
 Do not collapse discovery, selection, connection, provisioning, and operation into one boolean. Suggested states include:
-
 - discovered
 - evaluated
 - selected
@@ -69,5 +69,4 @@ Do not collapse discovery, selection, connection, provisioning, and operation in
 Not every entity uses every state. Transitions need defined evidence and failure handling.
 
 ## Identity and isolation
-
 Use stable internal IDs rather than provider names as primary identifiers. External IDs are stored as provider references. Product and environment boundaries must be enforced in authorization checks, not merely represented in UI.
